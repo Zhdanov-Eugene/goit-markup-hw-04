@@ -297,6 +297,43 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/* ::before-общий */
+.feature-list .items::before {
+  content: '';
+  display: block;
+  height: 120px;
+  outline: 1px solid red;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: ;
+
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.icon-antenna::before {
+  background-image: url();
+}
+.icon-clock::before {
+  background-image: url();
+}
+.icon-diagram::before {
+  background-image: url();
+}
+.icon-astronaut::before {
+  background-image: url();
+}
+
+/* альтернатива без доп.класса*/
+/* .feature-list .items:nth-child(1)::before {
+  background-image: url();
+}
+.feature-list .items:nth-child(2)::before {
+  background-image: url();
+} */
 
 /* чем мы занимаемся */
 .desc {
@@ -570,3 +607,23 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* .images {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+  background-image: linear-gradient(
+    to right,
+    rgba(),
+    rgba()    
+    );
+    url("../")
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: cover;
+
+
+     background: #C4C4C4;
+} */
