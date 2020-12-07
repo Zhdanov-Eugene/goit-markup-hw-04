@@ -7,7 +7,9 @@
   --button-primary-color-hover: #188ce8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --team-back-color: #f5f4fa;
-  --bg-hero-footer-color: #2f303a;
+  --bg-footer-color: #2f303a;
+  --bg-hero-color: #c4c4c4;
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
 }
 
 html {
@@ -146,7 +148,6 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }*/
-
 /* .site-nav .link.current {
   color: var(--accent-color); 
 }*/
@@ -176,13 +177,23 @@ img {
 
 /* hero */
 .hero {
-  background-color: var(--bg-hero-footer-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--bg-hero-color);
+  background-image: linear-gradient(var(--hero-overlay-color)),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
 
-  /* width: 1600px; */
+  text-align: center;
 }
 
 .hero-title {
@@ -224,7 +235,6 @@ img {
 .button-primary:focus {
   background-color: var(--body-color);
   color: var(--title-text-color);
-  /* border-color: var(--accent-color); */
 }
 
 /* Section */
@@ -298,7 +308,7 @@ img {
   letter-spacing: 0.03em;
 }
 /* ::before-общий */
-.feature-list .items::before {
+/* .feature-list .items::before {
   content: '';
   display: block;
   height: 120px;
@@ -306,10 +316,10 @@ img {
 
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  /* background-color: ; */
+  background-position: center; */
+/* background-color: ; */
 
-  margin-bottom: 30px;
+/* margin-bottom: 30px;
 
   background: #f5f4fa;
   border-radius: 4px;
@@ -325,7 +335,7 @@ img {
 }
 .icon-astronaut::before {
   background-image: url();
-}
+} */
 
 /* альтернатива без доп.класса*/
 /* .feature-list .items:nth-child(1)::before {
@@ -402,7 +412,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--bg-hero-footer-color);
+  background-color: var(--bg-footer-color);
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -607,23 +617,3 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* .images {
-  max-width: 1600px;
-  max-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
-  background-image: linear-gradient(
-    to right,
-    rgba(),
-    rgba()    
-    );
-    url("../")
-    background-repeat: no-repeat;
-    background-position: center;
-     background-size: cover;
-
-
-     background: #C4C4C4;
-} */
