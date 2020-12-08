@@ -181,7 +181,7 @@ img {
 /* .............hero............... */
 .hero {
   padding-top: 200px;
-  max-width: 1600px;
+  min-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -487,6 +487,8 @@ img {
 /* =======footer======= */
 
 .footer {
+  min-width: 1600px;
+  min-height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -525,7 +527,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.link-footer:hover,
+.address-footer .list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .link-footer:focus {
   color: var(--accent-color);
 }
@@ -561,7 +566,7 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-  height: 252px;
+  /* height: 252px; */
 }
 
 .socials .title {
