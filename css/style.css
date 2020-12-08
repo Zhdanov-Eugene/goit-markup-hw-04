@@ -10,6 +10,7 @@
   --bg-footer-color: #2f303a;
   --bg-hero-color: #c4c4c4;
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
+  --cliennt-color: #afb1b8;
 }
 
 html {
@@ -39,7 +40,7 @@ img {
   height: auto;
 }
 
-/* утилиты */
+/* .....утилиты....... */
 
 .list {
   list-style-type: none;
@@ -67,7 +68,7 @@ img {
   overflow: hidden;
 }
 
-/* page-header */
+/* ....page-header.... */
 .page-header {
   background-color: var(--body-color);
   border: 1px solid #ececec;
@@ -81,7 +82,7 @@ img {
   justify-content: space-between;
 }
 
-/* logo */
+/* ......logo...... */
 .logo {
   display: flex;
 
@@ -101,7 +102,7 @@ img {
   color: var(--text-logo-color);
 }
 
-/* site-nav */
+/* ........site-nav........ */
 
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -145,7 +146,7 @@ img {
   color: var(--accent-color); 
 }*/
 
-/* address-header */
+/* .........address-header......... */
 .address-header {
   display: flex;
   padding-top: 32px;
@@ -168,7 +169,7 @@ img {
   color: var(--accent-color);
 }
 
-/* hero */
+/* .............hero............... */
 .hero {
   padding-top: 200px;
   max-width: 1600px;
@@ -206,7 +207,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Button */
+/* ...........Button........... */
 .button-primary {
   min-width: 200px;
 
@@ -234,7 +235,7 @@ img {
   color: var(--title-text-color);
 }
 
-/* Section */
+/* ..........Section.......... */
 /* .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -266,8 +267,12 @@ img {
   padding-top: 0px;
   padding-bottom: 94px;
 }
+.clients-section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
 
-/* features */
+/* ...........features............*/
 .feature-list {
   display: flex;
 }
@@ -356,7 +361,7 @@ img {
   margin-left: 30px;
 }
 
-/* our team */
+/* .........our team........... */
 
 .section-team .team {
   display: flex;
@@ -403,7 +408,43 @@ img {
   margin-bottom: 30px;
 }
 
-/* footer */
+/* ....Постоянные клиенты.... */
+
+.clients-section .list {
+  display: flex;
+}
+
+.list .icon a {
+  fill: var(--cliennt-color);
+  border: 1px solid #afb1b8;
+
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  width: 100%;
+  height: 90px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list .icon {
+  display: flex;
+  width: calc((100% - 150px) / 6);
+}
+
+.list .icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list .icon a:hover,
+.list .icon a:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+/* =======footer======= */
 
 .footer {
   padding-top: 60px;
@@ -466,9 +507,9 @@ img {
   color: var(--body-color);
 }
 
-/* finish */
+/*---------- finish------------ */
 
-/* СТИЛИ ПОРТФОЛИО */
+/* ---------СТИЛИ ПОРТФОЛИО-------------- */
 /* фильтры или радио кнопки */
 
 .filtres {
@@ -495,7 +536,7 @@ img {
   margin-left: 8px;
 }
 
-/* контент портфолио */
+/* ........контент портфолио....... */
 
 .portfolio {
   margin: 0px;
