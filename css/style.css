@@ -537,6 +537,60 @@ img {
   color: var(--body-color);
 }
 
+.addres-info {
+  margin-right: 70px;
+  max-width: 230px;
+}
+
+.footer .socials {
+  margin: 0px;
+  width: 206px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+  height: 252px;
+}
+
+.socials .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-color);
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.footer .socials .list {
+  display: flex;
+}
+
+.footer .socials li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--body-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer .socials a:hover,
+.footer .socials a:focus {
+  background-color: var(--accent-color);
+}
+
 /*---------- finish------------ */
 
 /* ---------СТИЛИ ПОРТФОЛИО-------------- */
