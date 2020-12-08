@@ -225,7 +225,8 @@ img {
   margin-bottom: 9px;
 }
 
-.link-footer:focus {
+.link-footer:focus,
+.link-footer:hover {
   color: var(--accent-color);
 }
 
