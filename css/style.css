@@ -408,6 +408,36 @@ img {
   margin-bottom: 30px;
 }
 
+.section-team .socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.section-team .socials .list {
+  display: flex;
+}
+
+.section-team .socials li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.section-team .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--cliennt-color);
+  /* background-color: var(--body-color); */
+}
+
+.section-team .socials a:hover,
+.section-team .socials a:focus {
+  fill: var(--body-color);
+  background-color: var(--accent-color);
+}
+
 /* ....Постоянные клиенты.... */
 
 .clients-section .list {
