@@ -147,11 +147,16 @@ img {
 }*/
 
 /* .........address-header......... */
+
 .address-header {
   display: flex;
+}
+
+.address-header .link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -160,13 +165,17 @@ img {
   letter-spacing: 0.02em;
 }
 
-.address-header + .address-header {
-  margin-left: 50px;
+.address-header .link:not(:last-child) {
+  margin-right: 50px;
 }
 
-.address-header:hover,
-.address-header:focus {
+.address-header .link:hover,
+.address-header .link:focus {
   color: var(--accent-color);
+}
+.address-header .link svg {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* .............hero............... */
@@ -474,6 +483,7 @@ img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
 /* =======footer======= */
 
 .footer {
